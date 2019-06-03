@@ -32,9 +32,6 @@ const SubHeading = styled.h2`
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.2rem;
-  .uppercase {
-    text-transform: uppercase;
-  }
 `
 const PreviewButton = styled.button`
   margin-right: 7px;

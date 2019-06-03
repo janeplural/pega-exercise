@@ -31,9 +31,6 @@ const PWDetails = styled.p`
   font-size: 12px;
   line-height: ${12 * 1.4}px;
   color: #FEB53A;
-  .uppercase {
-    text-transform: uppercase;
-  }
 `;
 const Wrap = styled.div`
   min-width: 12.2rem;

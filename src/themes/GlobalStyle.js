@@ -19,6 +19,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+  .uppercase {
+    text-transform: uppercase;
+  }
 `
 
 export default GlobalStyle;
