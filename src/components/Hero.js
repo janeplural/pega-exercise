@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const HeroContainer = styled.main`
+const HeroContainer = styled.section`
   display: flex;
   justify-content: center;
   background-color: ${props => props.main ? '#F2F3F4' : '#fff'};
 `
-const HeroContent = styled.section`
+const HeroContent = styled.div`
   width: 90vw;
   max-width: 99.2rem;
   margin-bottom: 3.5rem;
