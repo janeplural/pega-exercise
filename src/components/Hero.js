@@ -2,14 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const HeroContainer = styled.main`
+  display: flex;
+  justify-content: center;
+  background-color: ${props => props.main ? '#F2F3F4' : '#fff'};
+`
 const HeroContent = styled.section`
-  width: ${props => props.main ? '100vw' : '90vw'};
+  width: 90vw;
+  max-width: 99.2rem;
   margin-bottom: 3.5rem;
   border-bottom: ${props => props.main ? 'none' :'.1rem solid #CACDD5'};
   padding-top: ${props => props.main ? '9.8rem' : '5.6rem'};
   padding-bottom: ${props => props.main ? '3.5rem' : '4.9rem'};
-  padding-left: ${props => props.main ? '2.1rem' : '0'};
-  background-color: ${props => props.main ? '#F2F3F4' : '#fff'};
 `;
 const DesignLink = styled(Link)`
   font-size: 2.1rem;
@@ -51,13 +55,15 @@ const DownloadButton = styled.button`
 `;
 
 const Hero = (props) => (
-  <HeroContent main={props.main}>
-    {!props.main && <DesignLink to="/">Design Track</DesignLink>}
-    {props.main && <SubHeading><strong>Pega<span className="uppercase">World</span></strong> June 3-7, 2019</SubHeading>}
-    <Heading main={props.main}>{props.heading}</Heading>
-    <PreviewButton main={props.main}>Preview Week</PreviewButton>
-    <DownloadButton>Download PDF</DownloadButton>
-  </HeroContent>
+  <HeroContainer main={props.main}>
+    <HeroContent main={props.main}>
+      {!props.main && <DesignLink to="/">Design Track</DesignLink>}
+      {props.main && <SubHeading><strong>Pega<span className="uppercase">World</span></strong> June 3-7, 2019</SubHeading>}
+      <Heading main={props.main}>{props.heading}</Heading>
+      <PreviewButton main={props.main}>Preview Week</PreviewButton>
+      <DownloadButton>Download PDF</DownloadButton>
+    </HeroContent>
+  </HeroContainer>
 );
 
 export default Hero;
