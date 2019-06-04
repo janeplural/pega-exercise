@@ -30,13 +30,16 @@ const Subtitle = styled.dd`
 class EventListItem extends React.Component {
   getThemeColor = (category) => {
     const colors = {
-      'break':'solid #fff',
-      'main':'solid #585C73',
-      'strategy':'solid #20A950',
-      'centricity':'solid #E00A81',
-      'cx':'solid #2B38A1',
-      'travel':'dashed #CACDD5',
-      'event':'solid #FFCA5F'
+      break: 'solid #fff',
+      centricity: 'solid #E00A81',
+      cx: 'solid #2B38A1',
+      main: 'solid #585C73',
+      event: 'solid #FFCA5F',
+      info: 'solid #A9D400',
+      mobile: 'solid #FD6000',
+      pegaworld: 'solid #295ED9',
+      strategy: 'solid #20A950',
+      travel: 'dashed #CACDD5'
     };
     return {category: colors[category]}
   };
