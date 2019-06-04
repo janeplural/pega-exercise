@@ -2,8 +2,8 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
 const Card = styled.div`
-  margin-top: 1.4rem;
-  margin-bottom: 3.5rem;
+  margin-top: ${props => (props.category === 'break') ? '0' : '1.4rem'};
+  margin-bottom: ${props => (props.category === 'break') ? '3.5rem' : '4.9rem'};
   border-left: .7rem ${props => props.theme.category};
   padding: .7rem 1.4rem;
   &:last-of-type {
@@ -50,7 +50,7 @@ class EventListItem extends React.Component {
     return (
       <>
         <ThemeProvider theme={this.getThemeColor(this.props.theme)}>
-          <Card aria-label={this.props.theme}>
+          <Card aria-label={this.props.theme} category={this.props.theme}>
             <BlockPlace>{this.props.block}{this.props.place && `, ${this.props.place}`}</BlockPlace>
             <Title>{this.props.title}</Title>
             {this.props.subtitle && <Subtitle>{this.props.subtitle}</Subtitle>}
