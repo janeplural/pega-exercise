@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import EventList from './EventList';
+import PrevNextDayNav from './PrevNextDayNav';
 import agenda from '../data/agenda.json';
 
 const SundayPage = () => (
@@ -9,6 +10,7 @@ const SundayPage = () => (
     <main>
       <EventList data={agenda[0].events}/>
     </main>
+    <PrevNextDayNav next="/design-track/monday"/>
   </>
 );
 
