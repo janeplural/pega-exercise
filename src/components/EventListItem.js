@@ -42,7 +42,8 @@ class EventListItem extends React.Component {
       mobile: 'solid #FD6000',
       pegaworld: 'solid #295ED9',
       strategy: 'solid #20A950',
-      travel: 'dashed #CACDD5'
+      travel: 'dashed #CACDD5',
+      ucd: 'solid #E10B81'
     };
     return {category: colors[category]}
   };
