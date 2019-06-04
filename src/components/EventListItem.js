@@ -47,7 +47,7 @@ class EventListItem extends React.Component {
     return (
       <>
         <ThemeProvider theme={this.getThemeColor(this.props.theme)}>
-          <Card>
+          <Card aria-label={this.props.theme}>
             <BlockPlace>{this.props.block}{this.props.place && `, ${this.props.place}`}</BlockPlace>
             <Title>{this.props.title}</Title>
             {this.props.subtitle && <Subtitle>{this.props.subtitle}</Subtitle>}
