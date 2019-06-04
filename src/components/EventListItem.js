@@ -6,6 +6,9 @@ const Card = styled.div`
   margin-bottom: 3.5rem;
   border-left: .7rem ${props => props.theme.category};
   padding: .7rem 1.4rem;
+  &:last-of-type {
+    margin-bottom: 7.7rem;
+  }
 `;
 const BlockPlace = styled.dt`
   font-size: 1.9rem;
