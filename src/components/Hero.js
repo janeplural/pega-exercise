@@ -10,8 +10,9 @@ const HeroContainer = styled.section`
 const HeroContent = styled.div`
   width: 90vw;
   max-width: 99.2rem;
+  margin-top: 5.6rem;
   margin-bottom: 3.5rem;
-  border-bottom: ${props => props.main ? 'none' :'.1rem solid #CACDD5'};
+  border-bottom: ${props => (props.main || props.wed) ? 'none' :'.1rem solid #CACDD5'};
   padding-top: ${props => props.main ? '9.8rem' : '5.6rem'};
   padding-bottom: ${props => props.main ? '3.5rem' : '4.9rem'};
 `;
@@ -53,7 +54,7 @@ const DownloadButton = styled.button`
 
 const Hero = (props) => (
   <HeroContainer main={props.main}>
-    <HeroContent main={props.main}>
+    <HeroContent main={props.main} wed={props.wed}>
       {!props.main && <DesignLink to="/">Design Track</DesignLink>}
       {props.main && <SubHeading><strong>Pega<span className="uppercase">World</span></strong> June 3-7, 2019</SubHeading>}
       <Heading main={props.main}>{props.heading}</Heading>
