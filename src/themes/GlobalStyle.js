@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
     padding: 0;
     margin: 0;
+    outline: none;
   }
   .uppercase {
     text-transform: uppercase;
