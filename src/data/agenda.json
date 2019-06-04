@@ -1,0 +1,308 @@
+[
+  {
+    "date": "3",
+    "day": "sunday",
+    "events": [
+
+      {
+        "block": "by 12:00",
+        "place": "Marriot Orlando",
+        "title": "Check-in & Registration",
+        "subtitle": "Check into PegaWORLD and register.",
+        "theme": "break"
+      },
+      {
+        "block": "1:00 - 1:30",
+        "place": "Room J1",
+        "title": "Opening Remarks",
+        "theme": "main"
+      },
+      {
+        "block": "1:30 - 3:00",
+        "place": "Room J1",
+        "title": "Strategic Applications and Competitive Intelligence",
+        "theme": "strategy"
+      },
+      {
+        "block": "3:00 - 3:30",
+        "title": "Break",
+        "theme": "break"
+      },
+      {
+        "block": "3:30-4:30",
+        "place": "Room J1",
+        "title": "Customer Panel, Customer Centricity & Consulting",
+        "theme": "centricity"
+      },
+      {
+        "block": "4:30 - 5:15",
+        "place": "Room J1",
+        "title": "Key Messages, Customer Centricity & Consulting",
+        "theme": "centricity"
+      },
+      {
+        "block": "5:15 - 5:45",
+        "place": "Room J1",
+        "title": "Customer Experience - Don't Blow It!",
+        "theme": "cx"
+      },{
+        "block": "30 Mins",
+        "place": "Marriot Orlando",
+        "title": "Travel & Registration",
+        "subtitle": "Travel by bus from Marriot and register for PegaWORLD.",
+        "theme": "travel"
+      },{
+        "block": "6:30",
+        "title": "PegaWORLD: Reception & Dinner",
+        "theme": "event"
+      }
+    ]
+  },
+  {
+    "date": "4",
+    "day": "monday",
+    "events": [
+      {
+        "block": "8:00",
+        "title": "PegaWORLD",
+        "theme": "pegaworld"
+      },
+      {
+        "block": "6:00",
+        "place": "Universal Studios, Orlando",
+        "title": "PegaWORLD: Customer Appreciation Event",
+        "theme": "event"
+      }
+    ]
+  },
+  {
+    "date": "5",
+    "day": "tuesday",
+    "events": [
+      {
+        "block": "8:00",
+        "title": "PegaWORLD",
+        "theme": "pegaworld"
+      },
+      {
+        "block": "6:00",
+        "place": "Shingle Creek",
+        "title": "Design Track Event: Kayak Eco-Tour",
+        "theme": "event"
+      }
+    ]
+  },
+  {
+    "date": "6",
+    "day": "wednesday",
+    "track": 1,
+    "events": [
+      {
+        "block": "7:00 - 8:00",
+        "title": "Breakfast",
+        "theme": "break"
+      },
+      {
+        "block": "8:15 - 8:45",
+        "place": "Room K",
+        "title": "Overview, Mobile",
+        "theme": "mobile"
+      },
+      {
+        "block": "8:45 - 9:15",
+        "place": "Room K",
+        "title": "Overview, User Centered Design",
+        "theme": "ucd"
+      },
+      {
+        "block": "9:15 - 10:35",
+        "place": "Room K",
+        "title": "Implementations, User Centered Design",
+        "theme": "ucd"
+      },
+      {
+        "block": "10:45 - 11:00",
+        "title": "Break",
+        "theme": "break"
+      },
+      {
+        "block": "10:50 - 12:20",
+        "place": "Room K",
+        "title": "Nuts and Bolts, User Centered Design",
+        "theme": "ucd"
+      },
+      {
+        "block": "12:20 - 1:05",
+        "title": "Lunch",
+        "theme": "break"
+      },
+      {
+        "block": "1:05 - 2:35",
+        "place": "Room K",
+        "title": "It's all about the User Experience, Mobile",
+        "theme": "mobile"
+      },
+      {
+        "block": "2:35 - 3:55",
+        "place": "Room K",
+        "title": "Publishing an App & Offline Considerations, Mobile",
+        "theme": "mobile"
+      },
+      {
+        "block": "3:55 - 4:15",
+        "title": "Break",
+        "theme": "break"
+      },
+      {
+        "block": "4:15 - 5:30",
+        "place": "Room J1",
+        "title": "Upgrade Information",
+        "theme": "info"
+      },
+      {
+        "block": "5:30 - 6:30",
+        "place": "Room J1",
+        "title": "Introduction/Q&A, Customer Centricity",
+        "theme": "centricity"
+      },
+      {
+        "block": "5:30 - 6:30",
+        "place": "Marriot Orlando, World Center",
+        "title": "Design Track Event: Dinner",
+        "theme": "event"
+      }
+    ]
+  },
+  {
+    "date": "6",
+    "day": "wednesday",
+    "track": 2,
+    "events": [
+      {
+        "block": "7:00 - 8:00",
+        "title": "Breakfast",
+        "theme": "break"
+      },
+      {
+        "block": "8:15 - 8:45",
+        "place": "Room L",
+        "title": "Overview, User Centered Design",
+        "theme": "ucd"
+      },
+      {
+        "block": "8:45 - 9:15",
+        "place": "Room L",
+        "title": "Overview, Mobile",
+        "theme": "mobile"
+      },
+      {
+        "block": "9:15 - 10:45",
+        "place": "Room L",
+        "title": "It's all about the User Experience, Mobile",
+        "theme": "mobile"
+      },
+      {
+        "block": "10:45 - 11:00",
+        "title": "Break",
+        "theme": "break"
+      },
+      {
+        "block": "11:00 - 12:20",
+        "place": "Room L",
+        "title": "Publishing an App & Offline Considerations, Mobile",
+        "theme": "mobile"
+      },
+      {
+        "block": "12:20 - 1:05",
+        "title": "Lunch",
+        "theme": "break"
+      },
+      {
+        "block":  "1:05 - 2:35",
+        "place": "Room L",
+        "title": "Nuts and Bolts, User Centered Design",
+        "theme": "ucd"
+      },
+      {
+        "block": "2:35 - 3:55",
+        "place": "Room L",
+        "title": "Implementations, User Centered Design",
+        "theme": "ucd"
+      },
+      {
+        "block": "3:55 - 4:15",
+        "title": "Break",
+        "theme": "break"
+      },
+      {
+        "block": "4:15 - 5:30",
+        "place": "Room J1",
+        "title": "Upgrade Information",
+        "theme": "info"
+      },
+      {
+        "block": "5:30 - 6:30",
+        "place": "Room J1",
+        "title": "Introduction/Q&A, Customer Centricity",
+        "theme": "centricity"
+      },
+      {
+        "block": "5:30 - 6:30",
+        "place": "Marriot Orlando, World Center",
+        "title": "Design Track Event: Dinner",
+        "theme": "event"
+      }
+    ]
+  },
+  {
+    "date": "7",
+    "day": "thursday",
+    "events": [
+      {
+        "block": "7:00 - 8:00",
+        "title": "Breakfast",
+        "theme": "break"
+      },
+      {
+        "block": "8:15 - 10:15",
+        "place": "Room J1",
+        "title": "Breakouts, Customer Centricity",
+        "theme": "centricity"
+      },
+      {
+        "block": "3:00 - 3:30",
+        "title": "Break",
+        "theme": "break"
+      },
+      {
+        "block": "10:45 - 12:45",
+        "place": "Room J1",
+        "title": "Breakouts, Customer Centricity",
+        "theme": "centricity"
+      },
+      {
+        "block": "12:45 - 1:45",
+        "title": "Lunch",
+        "theme": "break"
+      },
+      {
+        "block": "1:45 - 2:30",
+        "place": "Room J1",
+        "title": "Action Planning Debrief, Customer Centricity",
+        "theme": "centricity"
+      },
+      {
+        "block": "2:30 - 2:45",
+        "place": "Room J1",
+        "title": "Closing Remarks",
+        "theme": "main"
+      },
+      {
+        "block": "from 3:00",
+        "title": "Departure",
+        "subtitle": "Travel from PegaWORLD. Bus service to airport.",
+        "theme": "travel"
+      }
+    ]
+  }
+]

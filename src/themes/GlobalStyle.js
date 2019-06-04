@@ -13,11 +13,21 @@ const GlobalStyle = createGlobalStyle`
     padding-top: 6.2rem;
     color: #10132E;
   }
+  main {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 99.2rem;
+    display: flex;
+    flex-direction: column;
+  }
   button {
     border: none;
     background-color: transparent;
     padding: 0;
     margin: 0;
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
 `
 

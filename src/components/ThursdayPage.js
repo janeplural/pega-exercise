@@ -4,14 +4,14 @@ import EventList from './EventList';
 import PrevNextDayNav from './PrevNextDayNav';
 import agenda from '../data/agenda.json';
 
-const SundayPage = () => (
+const ThursdayPage = () => (
   <>
-    <Hero heading="Sunday, June 3"/>
+    <Hero heading="Thursday, June 7"/>
     <main>
-      <EventList data={agenda[0].events}/>
+      <EventList data={agenda[5].events}/>
     </main>
-    <PrevNextDayNav next="/design-track/monday"/>
+    <PrevNextDayNav prev="/design-track/wednesday"/>
   </>
 );
 
-export default SundayPage;
+export default ThursdayPage;
