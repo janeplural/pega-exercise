@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const HeroContainer = styled.section`
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: center;
   background-color: ${props => props.main ? '#F2F3F4' : '#fff'};
@@ -10,10 +11,8 @@ const HeroContainer = styled.section`
 const HeroContent = styled.div`
   width: 90vw;
   max-width: 99.2rem;
-  margin-top: 5.6rem;
-  margin-bottom: 3.5rem;
   border-bottom: ${props => (props.main || props.wed) ? 'none' :'.1rem solid #CACDD5'};
-  padding-top: ${props => props.main ? '9.8rem' : '5.6rem'};
+  padding-top: 10.5rem;
   padding-bottom: ${props => props.main ? '3.5rem' : '4.9rem'};
 `;
 const DesignLink = styled(Link)`
