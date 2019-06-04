@@ -27,7 +27,7 @@ const Subtitle = styled.dd`
   color: #707070;
 `;
 
-class Event extends React.Component {
+class EventListItem extends React.Component {
   getThemeColor = (category) => {
     const colors = {
       'break':'solid #fff',
@@ -43,11 +43,11 @@ class Event extends React.Component {
   render() {
     return (
       <>
-        <ThemeProvider theme={this.getThemeColor(this.props.category)}>
+        <ThemeProvider theme={this.getThemeColor(this.props.theme)}>
           <Card>
-            <BlockPlace>by 12:00, Marriot Orlando</BlockPlace>
-            <Title>Check-in & Registration</Title>
-            <Subtitle>Travel to Pega<span className="uppercase">World</span> and register</Subtitle>
+            <BlockPlace>{this.props.block}{this.props.place && `, ${this.props.place}`}</BlockPlace>
+            <Title>{this.props.title}</Title>
+            {this.props.subtitle && <Subtitle>{this.props.subtitle}</Subtitle>}
           </Card>
         </ThemeProvider>
       </>
@@ -55,4 +55,4 @@ class Event extends React.Component {
   }
 }
 
-export default Event;
+export default EventListItem;

@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Hero from './Hero';
-import Event from './Event';
+import EventList from './EventList';
+import agenda from '../data/agenda.json';
 
 const Main = styled.main`
   margin: 0 auto;
@@ -15,7 +16,7 @@ const SundayPage = () => (
   <>
     <Hero heading="Sunday, June 3"/>
     <Main>
-      <Event category="strategy"/>
+      <EventList data={agenda[0].events}/>
     </Main>
   </>
 );
