@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import uuid from 'uuid';
 import Hero from './Hero';
@@ -11,6 +12,13 @@ const DateHeading = styled.h3`
   padding: 1.4rem 2.1rem;
   font-size: 2.45rem;
 `;
+const HeadingLink = styled(Link)`
+  text-decoration: none;
+  color: #10132E;
+  :visited {
+    color: #10132E;
+  }
+`
 
 class MainPage extends React.Component {
   getThemeColor = (category) => {
@@ -35,18 +43,26 @@ class MainPage extends React.Component {
       <>
       <Hero main heading="Design Track"/>
       <main>
-        <DateHeading>Sunday, June 3</DateHeading>
+        <DateHeading>
+          <HeadingLink to='/design-track/sunday'>Sunday, June 3</HeadingLink>
+        </DateHeading>
         <EventList data={agenda[0].events}/>
-        <DateHeading>Monday, June 4</DateHeading>
+        <DateHeading>
+          <HeadingLink to='/design-track/monday'>Monday, June 4</HeadingLink>
+        </DateHeading>
         <EventList data={agenda[1].events}/>
-        <DateHeading>Tuesday, June 5</DateHeading>
+        <DateHeading>
+          <HeadingLink to='/design-track/tuesday'>Tuesday, June 5</HeadingLink>
+        </DateHeading>
         <EventList data={agenda[2].events}/>
-        <DateHeading>Wednesday, June 6</DateHeading>
+        <DateHeading>
+          <HeadingLink to='/design-track/wednesday'>Wednesday, June 6</HeadingLink>
+        </DateHeading>
         <EventListItem key={uuid()} {...agenda[3].events[0]}/>
         {
           agenda[3].events.slice(1,4).map((event) => {
             return (
-              <ThemeProvider theme={this.getThemeColor(event.theme)}>
+              <ThemeProvider key={uuid()} theme={this.getThemeColor(event.theme)}>
                 <Card aria-label={event.theme} category={event.theme}>
                   <BlockPlace>Track One {event.block}, {event.place}</BlockPlace>
                   <BlockPlace>Track Two {agenda[4].events.find(el => el.title === event.title).block}, {agenda[4].events.find(el => el.title === event.title).place}</BlockPlace>
@@ -70,7 +86,7 @@ class MainPage extends React.Component {
         {
           agenda[3].events.slice(7,9).map((event) => {
             return (
-              <ThemeProvider theme={this.getThemeColor(event.theme)}>
+              <ThemeProvider key={uuid()} theme={this.getThemeColor(event.theme)}>
                 <Card aria-label={event.theme} category={event.theme}>
                   <BlockPlace>Track One {event.block}, {event.place}</BlockPlace>
                   <BlockPlace>Track Two {agenda[4].events.find(el => el.title === event.title).block}, {agenda[4].events.find(el => el.title === event.title).place}</BlockPlace>
@@ -86,7 +102,9 @@ class MainPage extends React.Component {
             return <EventListItem key={uuid()} {...event} />
           })
         }
-        <DateHeading>Thursday, June 7</DateHeading>
+        <DateHeading>
+          <HeadingLink to='/design-track/Thursday'>Thursday, June 7</HeadingLink>
+        </DateHeading>
         <EventList data={agenda[5].events}/>
       </main>
     </>

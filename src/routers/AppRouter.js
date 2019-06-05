@@ -9,10 +9,11 @@ import TuesdayPage from '../components/TuesdayPage';
 import WednesdayPage from '../components/WednesdayPage';
 import ThursdayPage from '../components/ThursdayPage';
 import NotFoundPage from '../components/NotFoundPage';
+import ScrollToTop from '../components/ScrollToTop';
 
 const AppRouter = () => (
   <BrowserRouter>
-    <div>
+    <ScrollToTop>
       <GlobalStyle/>
       <Header/>
       <Switch>
@@ -24,7 +25,7 @@ const AppRouter = () => (
         <Route path="/design-track/thursday" component={ThursdayPage}/>
         <Route component={NotFoundPage}/>
       </Switch>
-    </div>
+    </ScrollToTop>
   </BrowserRouter>
 );
 
