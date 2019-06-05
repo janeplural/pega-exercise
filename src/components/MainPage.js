@@ -10,6 +10,7 @@ import EventListItem, { Card, BlockPlace, Title, Subtitle } from './EventListIte
 import agenda from '../data/agenda.json';
 
 const DateHeading = styled(Element)`
+  margin-bottom: 2.1rem;
   border-bottom: .1rem solid #CACDD5;
   padding: 1.4rem 2.1rem;
   font-size: 2.45rem;
