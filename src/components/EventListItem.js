@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
-const Card = styled.div`
+export const Card = styled.div`
   margin-top: ${props => (props.category === 'break') ? '0' : '1.4rem'};
   margin-bottom: ${props => (props.category === 'break') ? '3.5rem' : '4.9rem'};
   border-left: .7rem ${props => props.theme.category};
@@ -10,19 +10,19 @@ const Card = styled.div`
     margin-bottom: 7.7rem;
   }
 `;
-const BlockPlace = styled.dt`
+export const BlockPlace = styled.dt`
   font-size: 1.9rem;
   line-height: 2.6rem;
   color: #707070;
 `;
-const Title = styled.dd`
+export const Title = styled.dd`
   margin-top: .7rem;
   margin-left: 0;
   font-size: 2.1rem;
   line-height: 2.94rem;
   font-weight: 700;
 `;
-const Subtitle = styled.dd`
+export const Subtitle = styled.dd`
   margin: 0;
   font-size: 1.6rem;
   line-height: 2.24rem;
