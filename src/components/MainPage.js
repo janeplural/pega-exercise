@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import uuid from 'uuid';
+import { Element } from 'react-scroll';
 import Hero from './Hero';
+import HotLinks from './HotLinks';
 import EventList from './EventList';
 import EventListItem, { Card, BlockPlace, Title, Subtitle } from './EventListItem';
 import agenda from '../data/agenda.json';
 
-const DateHeading = styled.h3`
+const DateHeading = styled(Element)`
   border-bottom: .1rem solid #CACDD5;
   padding: 1.4rem 2.1rem;
   font-size: 2.45rem;
@@ -21,7 +23,7 @@ const HeadingLink = styled(Link)`
 `
 
 class MainPage extends React.Component {
-  getThemeColor = (category) => {
+  getThemeColor(category) {
     const colors = {
       break: 'solid #fff',
       centricity: 'solid #E00A81',
@@ -36,26 +38,27 @@ class MainPage extends React.Component {
       ucd: 'solid #E10B81'
     };
     return {category: colors[category]}
-  };
+  }
 
   render() {
     return (
       <>
       <Hero main heading="Design Track"/>
+      <HotLinks/>
       <main>
-        <DateHeading>
+        <DateHeading name="sunday">
           <HeadingLink to='/design-track/sunday'>Sunday, June 3</HeadingLink>
         </DateHeading>
         <EventList data={agenda[0].events}/>
-        <DateHeading>
+        <DateHeading name="monday">
           <HeadingLink to='/design-track/monday'>Monday, June 4</HeadingLink>
         </DateHeading>
         <EventList data={agenda[1].events}/>
-        <DateHeading>
+        <DateHeading name="tuesday">
           <HeadingLink to='/design-track/tuesday'>Tuesday, June 5</HeadingLink>
         </DateHeading>
         <EventList data={agenda[2].events}/>
-        <DateHeading>
+        <DateHeading name="wednesday">
           <HeadingLink to='/design-track/wednesday'>Wednesday, June 6</HeadingLink>
         </DateHeading>
         <EventListItem key={uuid()} {...agenda[3].events[0]}/>
@@ -102,7 +105,7 @@ class MainPage extends React.Component {
             return <EventListItem key={uuid()} {...event} />
           })
         }
-        <DateHeading>
+        <DateHeading name="thursday">
           <HeadingLink to='/design-track/Thursday'>Thursday, June 7</HeadingLink>
         </DateHeading>
         <EventList data={agenda[5].events}/>
