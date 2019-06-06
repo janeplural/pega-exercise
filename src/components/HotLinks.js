@@ -2,15 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
-const Container = styled.section`
-  width: 90vw;
-  max-width: 99.2rem;
-  margin: 0 auto;
+const Container = styled.div`
   margin-bottom: 3.5rem;
   padding-right: 2.1rem;
   padding-left: 2.1rem;
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: 992px) {
+    flex-direction: column;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+  }
 `
 const HelperText = styled.p`
   width: 100%;
