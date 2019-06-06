@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const HeroContainer = styled.section`
   margin-bottom: 3.5rem;
+  padding-top: 6.3rem;
   display: flex;
   justify-content: center;
   background-color: ${props => props.main ? '#F2F3F4' : '#fff'};
