@@ -19,7 +19,7 @@ const TopButton = styled.button`
   right: 5rem;
   border-radius: .3rem;
   padding: 1.4rem;
-  color: #585B73;
+  color: #00647D;
   font-size: 1.8rem;
   font-weight: 700;
   cursor: pointer;
@@ -41,7 +41,7 @@ const TopButton = styled.button`
     }
   }
   @media (min-width: 1200px) {
-    right: 10%;
+    right: 5rem;
   }
 `
 
