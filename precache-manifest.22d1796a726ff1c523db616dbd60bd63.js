@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c219c79da87a9ff2af6164abf747bdd",
+    "revision": "8af33f520139fce77e78a15d94e6eb78",
     "url": "/pega-exercise/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pega-exercise/static/js/2.c5368cb1.chunk.js"
   },
   {
-    "revision": "8209ded58862349da2d0",
-    "url": "/pega-exercise/static/js/main.03274465.chunk.js"
+    "revision": "e4cb45ecf6b1b7456c85",
+    "url": "/pega-exercise/static/js/main.807aaadb.chunk.js"
   },
   {
     "revision": "94e02524962fbf6d3a9d",
