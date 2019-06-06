@@ -41,6 +41,9 @@ const HeadingLink = styled(Link)`
 `;
 
 class MainPage extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   getThemeColor(category) {
     const colors = {
       break: 'solid #fff',

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Hero from './Hero';
 import EventList from './EventList';
@@ -16,7 +16,7 @@ const ButtonGroup = styled.div`
     background-color: #C44500;
     ${props => !props.trackOne && 'transform: translateX(13.8rem)'}
   }
-  `;
+`;
 const Button = styled.button`
   padding: 1.4rem 2.8rem;
   width: 13.8rem;
@@ -33,6 +33,10 @@ const ButtonTwo = styled(Button)`
 function WednesdayPage() {
   const [trackOne, setTrack] = useState(true);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
+  
   return(
     <>
     <Hero wed heading="Wednesday, June 6"/>
