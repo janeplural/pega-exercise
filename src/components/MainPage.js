@@ -7,6 +7,7 @@ import Hero from './Hero';
 import HotLinks from './HotLinks';
 import EventList from './EventList';
 import EventListItem, { Card, BlockPlace, Title, Subtitle } from './EventListItem';
+
 import agenda from '../data/agenda.json';
 
 const Main = styled.main`
