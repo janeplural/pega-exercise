@@ -23,7 +23,7 @@ const LogoAddition = styled.div`
   display: flex;
   align-items: center;
   @media (min-width: 992px) {
-    margin-right: 35vw;
+    margin-right: 33vw;
   }
 `;
 const PWDetails = styled.p`
