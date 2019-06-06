@@ -11,9 +11,21 @@ const NavContainer = styled.div`
   justify-content: space-between;
 `
 const PageLink = styled(Link)`
+  color: #295ED9;
   font-size: 1.6rem;
   line-height: 2.1rem;
   text-decoration: none;
+  padding: 1.4rem;
+  :visited {
+    color: #295ED9;
+  }
+  :hover {
+    color: #113DA6;
+  }
+  :focus {
+    color: #113DA6; 
+    background-color: #EAEFFA;
+  }
 `
 
 const PrevNextDayNav = (props) => (

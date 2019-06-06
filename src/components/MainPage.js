@@ -21,6 +21,10 @@ const HeadingLink = styled(Link)`
   :visited {
     color: #10132E;
   }
+  :hover,
+  :focus {
+    color: #113DA6;
+  }
 `
 
 class MainPage extends React.Component {
