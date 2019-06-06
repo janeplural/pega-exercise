@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import styled from 'styled-components';
 import GlobalStyle from '../themes/GlobalStyle';
@@ -55,7 +55,7 @@ class AppRouter extends React.Component {
   }
   render(){
     return (
-      <HashRouter basename="/">
+      <BrowserRouter basename="/pega-exercise">
         <div>
           <GlobalStyle/>
           <Header/>
@@ -71,7 +71,7 @@ class AppRouter extends React.Component {
           </Switch>
           <TopButton onClick={this.scrollToTop}>Top</TopButton>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     )
   }
 }
