@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const HeroContainer = styled.section`
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: center;
   background-color: ${props => props.main ? '#F2F3F4' : '#fff'};
@@ -10,10 +11,8 @@ const HeroContainer = styled.section`
 const HeroContent = styled.div`
   width: 90vw;
   max-width: 99.2rem;
-  margin-top: 5.6rem;
-  margin-bottom: 3.5rem;
   border-bottom: ${props => (props.main || props.wed) ? 'none' :'.1rem solid #CACDD5'};
-  padding-top: ${props => props.main ? '9.8rem' : '5.6rem'};
+  padding-top: 10.5rem;
   padding-bottom: ${props => props.main ? '3.5rem' : '4.9rem'};
 `;
 const DesignLink = styled(Link)`
@@ -21,6 +20,10 @@ const DesignLink = styled(Link)`
   font-weight: 700;
   text-decoration: none;
   color: #404258;
+  :hover,
+  :focus {
+    color: #295ED9;
+  }
 `;
 const Heading = styled.h1`
   margin-top: 1.4rem;
@@ -44,12 +47,31 @@ const PreviewButton = styled.button`
   font-size: 1.6rem;
   font-weight: ${props => props.main ? '700' : '400'}
   line-height: 2.1rem;
+  cursor: pointer;
+  :hover {
+    ${props => props.main && 'background-color: #113DA6;'}
+    ${props => !props.main && 'box-shadow: .3rem .1rem .9rem .2rem rgba(16,19,46,.2);'}
+  }
+  :focus {
+    background-color: ${props => props.main ? '#1F2555': '#EAEFFA'};
+    border-color: ${props => props.main ? '#1F2555' : '#10132E'};
+    ${props => !props.main && 'color: #10132E;'}
+    ${props => !props.main && 'box-shadow: .3rem .1rem .9rem .2rem rgba(16,19,46,.2);'}
+  }
 `;
 const DownloadButton = styled.button`
   color: #295ED9;
   font-size: 1.6rem;
   line-height: 2.1rem;
   padding: 1.1rem 1.4rem;
+  cursor: pointer;
+  :hover {
+    color: #113DA6;
+  }
+  :focus {
+    color: #113DA6; 
+    background-color: #EAEFFA;
+  }
 `;
 
 const Hero = (props) => (
