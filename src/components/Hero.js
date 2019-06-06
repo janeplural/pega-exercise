@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const HeroContainer = styled.section`
   margin-bottom: 3.5rem;
+  padding-top: 6.3rem;
   display: flex;
   justify-content: center;
   background-color: ${props => props.main ? '#F2F3F4' : '#fff'};
@@ -77,7 +78,7 @@ const DownloadButton = styled.button`
 const Hero = (props) => (
   <HeroContainer main={props.main}>
     <HeroContent main={props.main} wed={props.wed}>
-      {!props.main && <DesignLink to="/">Design Track</DesignLink>}
+      {!props.main && <DesignLink to="/design-track">Design Track</DesignLink>}
       {props.main && <SubHeading><strong>Pega<span className="uppercase">World</span></strong> June 3-7, 2019</SubHeading>}
       <Heading main={props.main}>{props.heading}</Heading>
       <PreviewButton main={props.main}>Preview Week</PreviewButton>
