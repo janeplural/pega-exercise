@@ -119,6 +119,9 @@ const RegisterButton = styled.button`
   font-size: 1.6rem;
   font-weight: 700;
 `
+const ExtLink = styled.a`
+  cursor: pointer;
+`
 
 export default function Header() {
   const [open, toggleNav] = useState(false);
@@ -126,11 +129,14 @@ export default function Header() {
   return (
     <Navbar>
       <LogoAddition>
-        <picture>
-          <source media="(max-width: 576px)" srcSet={logoMobile}></source>
-          <source media="(min-width: 577px)" srcSet={logoDesktop}></source>
-          <img src={logoMobile} alt="Pega logo"/>
-        </picture>
+        <ExtLink href="https://www.pega.com/">
+          <SrOnly className="sr-only">Go to Pega's main website</SrOnly>
+          <picture>
+            <source media="(max-width: 576px)" srcSet={logoMobile}></source>
+            <source media="(min-width: 577px)" srcSet={logoDesktop}></source>
+            <img src={logoMobile} alt="Pega logo"/>
+          </picture>
+        </ExtLink>
         <PWDetails>Pega<span className="uppercase">world</span><br />June 3-7, 2019</PWDetails>
       </LogoAddition>
   
