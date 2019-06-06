@@ -4,6 +4,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import styled from 'styled-components';
 import GlobalStyle from '../themes/GlobalStyle';
 import Header from '../components/Header';
+import HomePage from '../components/HomePage';
 import MainPage from '../components/MainPage';
 import SundayPage from '../components/SundayPage';
 import MondayPage from '../components/MondayPage';
@@ -55,18 +56,21 @@ class AppRouter extends React.Component {
   render(){
     return (
       <BrowserRouter>
-        <GlobalStyle/>
-        <Header/>
-        <Switch>
-          <Route path="/" component={MainPage} exact={true}/>
-          <Route path="/design-track/sunday" component={SundayPage}/>
-          <Route path="/design-track/monday" component={MondayPage}/>
-          <Route path="/design-track/tuesday" component={TuesdayPage}/>
-          <Route path="/design-track/wednesday" component={WednesdayPage}/>
-          <Route path="/design-track/thursday" component={ThursdayPage}/>
-          <Route component={NotFoundPage}/>
-        </Switch>
-        <TopButton onClick={this.scrollToTop}>Top</TopButton>
+        <div>
+          <GlobalStyle/>
+          <Header/>
+          <Switch>
+            <Route path="/" component={HomePage} exact/>
+            <Route path="/design-track" component={MainPage} exact/>
+            <Route path="/design-track/sunday" component={SundayPage}/>
+            <Route path="/design-track/monday" component={MondayPage}/>
+            <Route path="/design-track/tuesday" component={TuesdayPage}/>
+            <Route path="/design-track/wednesday" component={WednesdayPage}/>
+            <Route path="/design-track/thursday" component={ThursdayPage}/>
+            <Route component={NotFoundPage}/>
+          </Switch>
+          <TopButton onClick={this.scrollToTop}>Top</TopButton>
+        </div>
       </BrowserRouter>
     )
   }
