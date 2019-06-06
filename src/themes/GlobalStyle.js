@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
   main {
     margin: 0 auto;
+    padding-top: 2rem;
     width: 90vw;
     max-width: 99.2rem;
     display: flex;
