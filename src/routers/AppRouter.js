@@ -26,7 +26,7 @@ const TopButton = styled.button`
     color: #585B73;
   }
   :hover {
-    color: #3A3D4D;
+    color: #295ED9;
   }
   :focus {
     color: #585B73;
@@ -35,6 +35,9 @@ const TopButton = styled.button`
   @media (max-width: 576px) {
     background-color: #F2F3F4;
     opacity: .95;
+    :hover {
+      color: #3A3D4D;
+    }
   }
   @media (min-width: 1200px) {
     right: 10%;
