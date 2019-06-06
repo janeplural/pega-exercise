@@ -1,7 +1,6 @@
 import React, { useState }from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
 import logoMobile from '../images/logo-mobile.svg';
 import logoDesktop from '../images/logo-desktop.svg';
 
@@ -10,6 +9,7 @@ const Navbar = styled.header`
   min-height: 6.2rem;
   position: fixed;
   top: 0;
+  padding-top: 1vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -98,11 +98,11 @@ const Bar = styled.div`
     transform: translateY(0.7rem);
   }
 `
-const NavMainLink = styled(NavLink)`
-  margin: 1.4rem 1rem;
-  font-size: 1.4rem;
+const NavMainLink = styled(Link)`
+  margin: 1.4rem 2.8rem 2.1rem;
+  font-size: 1.6rem;
   text-align: right;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   color: #fff;
 `
@@ -110,6 +110,7 @@ const RegisterButton = styled.button`
   width: 12.2rem;
   margin-top: 1.4rem;
   margin-bottom: 2.1rem;
+  margin-left: 1.4rem;
   border: none;
   border-radius: .3rem;
   padding: 1.4rem 2.8rem;
@@ -140,10 +141,8 @@ export default function Header() {
         </ToggleButton>
   
         <NavMain open={open}>
-          <NavMainLink to="/" activeClassName="is-active" exact={true}>Home</NavMainLink>
-          <NavMainLink to="/details" activeClassName="is-active">Details</NavMainLink>
-          <NavMainLink to="/help" activeClassName="is-active">Tech Pavillion</NavMainLink>
-          <NavMainLink to="/help" activeClassName="is-sactive">Experience</NavMainLink>
+          <NavMainLink to="/" onClick={() => toggleNav(prevOpen => !prevOpen)}>Home</NavMainLink>
+          <NavMainLink to="/design-track" onClick={() => toggleNav(prevOpen => !prevOpen)}>Design Track</NavMainLink>
           <RegisterButton>Register</RegisterButton>
         </NavMain>
       </Wrap>
