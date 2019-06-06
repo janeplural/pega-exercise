@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pega-exercise/precache-manifest.22d1796a726ff1c523db616dbd60bd63.js"
+  "/pega-exercise/precache-manifest.04c1f96f3fd2a7e4c7c7c0da9ebe6c3a.js"
 );
 
 self.addEventListener('message', (event) => {
