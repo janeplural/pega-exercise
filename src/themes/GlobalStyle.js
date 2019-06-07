@@ -34,6 +34,9 @@ const GlobalStyle = createGlobalStyle`
   .uppercase {
     text-transform: uppercase;
   }
+  .viewing {
+    background-color: #EAEFFA;
+  }
 `
 
 export default GlobalStyle;
