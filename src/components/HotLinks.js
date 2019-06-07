@@ -29,6 +29,7 @@ const HotLink = styled(Link)`
   color: #295ED9;
   font-size: 1.6rem;
   line-height: 2.1rem;
+  text-transform: capitalize;
   :hover {
     cursor: pointer;
     box-shadow: .3rem .1rem .9rem .2rem rgba(16,19,46,.2);
@@ -42,15 +43,40 @@ const HotLink = styled(Link)`
   }
 `
 
-const HotLinks = () => (
-  <Container>
-    <HelperText>Jump to day:</HelperText>
-    <HotLink activeClass="active" to="sunday" smooth={true} offset={-95} duration={1000} delay={100}>Sun, June 3</HotLink>
-    <HotLink activeClass="active" to="monday" smooth={true} offset={-95} duration={1000} delay={100}>Mon, June 4</HotLink>
-    <HotLink activeClass="active" to="tuesday" smooth={true} offset={-95} duration={1000} delay={100}>Tue, June 5</HotLink>
-    <HotLink activeClass="active" to="wednesday" smooth={true} offset={-95} duration={1000} delay={100}>Wed, June 6</HotLink>
-    <HotLink activeClass="active" to="thursday" smooth={true} offset={-95} duration={1000} delay={100}>Thu, June 7</HotLink>
+function HotLinks() {
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday'];
+  const addMatchStyle = (e) => {
+    document.getElementById(`${e}-link`).classList.add('viewing');
+  }
+  const removeMatchStyle = (e) => {
+    document.getElementById(`${e}-link`).classList.remove('viewing');
+  }
+  
+  return (
+    <Container>
+      <HelperText>Jump to day:</HelperText>
+      {
+        days.map((day, i) => {
+          return (
+            <HotLink
+              key={i+day}
+              id={`${day}-link`}
+              spy={true}
+              activeClass="active"
+              to={day}
+              smooth={true}
+              offset={-95}
+              duration={1000}
+              delay={100}
+              onSetActive={(e) => addMatchStyle(e)}
+              onSetInactive={(e) => removeMatchStyle(e)}
+            >
+              {`${day.substring(0,3)}, June ${i+3}`}
+            </HotLink>
+          )
+        })
+      }
   </Container>
-);
+);}
 
 export default HotLinks;
