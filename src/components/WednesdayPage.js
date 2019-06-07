@@ -33,9 +33,7 @@ const ButtonTwo = styled(Button)`
 function WednesdayPage() {
   const [trackOne, setTrack] = useState(true);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  })
+  useEffect(() => {window.scrollTo(0, 0);}, []);
   
   return(
     <>
