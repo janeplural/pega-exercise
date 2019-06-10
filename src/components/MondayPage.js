@@ -13,7 +13,9 @@ class MondayPage extends React.Component {
       <>
         <Hero heading="Monday, June 4"/>
         <main>
-          <EventList data={agenda[1].events}/>
+          <ul>
+            <EventList data={agenda[1].events}/>
+          </ul>
         </main>
         <PrevNextDayNav prev="/design-track/sunday" next="/design-track/tuesday"/>
       </>

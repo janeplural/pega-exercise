@@ -43,8 +43,10 @@ function WednesdayPage() {
         <ButtonOne onClick={() => setTrack(true)} active={trackOne}>Track One</ButtonOne>
         <ButtonTwo onClick={() => setTrack(false)} active={trackOne}>Track Two</ButtonTwo>
       </ButtonGroup>
-      {trackOne && <EventList data={agenda[3].events}/>}
-      {!trackOne && <EventList data={agenda[4].events}/>}
+      <ul>
+        {trackOne && <EventList data={agenda[3].events}/>}
+        {!trackOne && <EventList data={agenda[4].events}/>}
+      </ul>
     </main>
     <PrevNextDayNav prev="/design-track/tuesday" next="/design-track/thursday"/>
   </>
