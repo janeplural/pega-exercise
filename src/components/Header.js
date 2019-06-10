@@ -14,15 +14,19 @@ const Navbar = styled.header`
   justify-content: center;
   align-items: flex-start;
   background-color: #1F2555;
+  @media (max-width: 576px) {
+    white-space: nowrap;
+    overflow: visible;
+  }
   @media (min-width: 992px) {
     align-items: center;
   }
 `;
 const LogoAddition = styled.div`
-  margin-right: 15vw;
+  margin-right: 10%;
   display: flex;
   align-items: center;
-  @media (min-width: 992px) {
+  @media (min-width: 576px) {
     margin-right: 33vw;
   }
 `;
@@ -33,7 +37,7 @@ const PWDetails = styled.p`
   color: #FEB53A;
 `;
 const Wrap = styled.div`
-  min-width: 12.2rem;
+  min-width: 15rem;
   display: flex;
   flex-direction: column;
   @media (min-width: 992px) {
@@ -62,7 +66,7 @@ const SrOnly = styled.span`
 const ToggleButton = styled.button`
   width: 5rem;
   height: 6.2rem;
-  margin-left: 7.2rem;
+  margin-left: 9.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   :focus {
@@ -99,7 +103,7 @@ const Bar = styled.div`
   }
 `
 const NavMainLink = styled(Link)`
-  margin: 1.4rem 2.8rem 2.1rem;
+  margin: 1.4rem 2.8rem 1.2rem;
   font-size: 1.6rem;
   text-align: right;
   font-weight: 400;
